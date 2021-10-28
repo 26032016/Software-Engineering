@@ -6,9 +6,7 @@
   <packagedElement xmi:type="uml:Actor" xmi:id="_WbuGUDglEeyAvIV-yKPboA" name="Owner of Controlled Area"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_ZTNQ0DglEeyAvIV-yKPboA" name="Staff of Controlled Area"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_dy3TADglEeyAvIV-yKPboA" name="Test Centre Staff"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_e97X8DglEeyAvIV-yKPboA" name="Holder"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_ga6TUDglEeyAvIV-yKPboA" name="Staff in Disease Control Centre"/>
-  <packagedElement xmi:type="uml:Actor" xmi:id="_rltX0DglEeyAvIV-yKPboA" name="System Operators"/>
   <packagedElement xmi:type="uml:Package" xmi:id="_wmWnMDglEeyAvIV-yKPboA" name="Crownpass">
     <packagedElement xmi:type="uml:Class" xmi:id="_7t1R8DglEeyAvIV-yKPboA" name="Sub System: Tester" useCase="_EDNogDgmEeyAvIV-yKPboA _E7jlwDgmEeyAvIV-yKPboA _GbjY4DgmEeyAvIV-yKPboA _Ngh3gDgmEeyAvIV-yKPboA _OxoTADgmEeyAvIV-yKPboA _P3hkEDgmEeyAvIV-yKPboA _Rd4d4DgmEeyAvIV-yKPboA">
       <ownedUseCase xmi:type="uml:UseCase" xmi:id="_EDNogDgmEeyAvIV-yKPboA" name="Enter Test Result" subject="_7t1R8DglEeyAvIV-yKPboA"/>
@@ -84,6 +82,13 @@
       <ownedUseCase xmi:type="uml:UseCase" xmi:id="_VaVWQDgvEeyx5OGe8GVJCA" name="Notify and Close" subject="__mvHEDguEeyx5OGe8GVJCA"/>
       <ownedUseCase xmi:type="uml:UseCase" xmi:id="_WOvOsDgvEeyx5OGe8GVJCA" name="Reset Area State" subject="__mvHEDguEeyx5OGe8GVJCA"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_LIt1IDgyEeyYdeTmp7jhIg" name="[extend]" client="_Ghhu8DgvEeyx5OGe8GVJCA" supplier="__mvHEDguEeyx5OGe8GVJCA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_ozk7gDgyEeyYdeTmp7jhIg" name="[extent]" client="_IUtj0DgvEeyx5OGe8GVJCA" supplier="_NHpHUDgvEeyx5OGe8GVJCA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_-HovADgyEeyYdeTmp7jhIg" name="[include]" client="_USwDIDgvEeyx5OGe8GVJCA" supplier="_WOvOsDgvEeyx5OGe8GVJCA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_Q-5I4DgzEeyYdeTmp7jhIg" name="[include]" client="_KnnakDgvEeyx5OGe8GVJCA" supplier="_IUtj0DgvEeyx5OGe8GVJCA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_bI-XQDgzEeyYdeTmp7jhIg" name="[extend]" client="_VaVWQDgvEeyx5OGe8GVJCA" supplier="_Lk0psDgvEeyx5OGe8GVJCA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_jp9g4DgzEeyYdeTmp7jhIg" name="[include]" client="_Lk0psDgvEeyx5OGe8GVJCA" supplier="_MNw5ADgvEeyx5OGe8GVJCA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_lcfOcDgzEeyYdeTmp7jhIg" client="_Lk0psDgvEeyx5OGe8GVJCA" supplier="_USwDIDgvEeyx5OGe8GVJCA"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Association" xmi:id="_JWviMDgnEeyAvIV-yKPboA" memberEnd="_JWwwUDgnEeyAvIV-yKPboA _JWxXYDgnEeyAvIV-yKPboA">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JWwJQDgnEeyAvIV-yKPboA" source="org.eclipse.papyrus">
@@ -120,7 +125,7 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_NkbDkjgnEeyAvIV-yKPboA" name="setup monitoring region" type="_P3hkEDgmEeyAvIV-yKPboA" association="_NkacgDgnEeyAvIV-yKPboA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_NkbDkzgnEeyAvIV-yKPboA" type="_ga6TUDglEeyAvIV-yKPboA" association="_NkacgDgnEeyAvIV-yKPboA"/>
   </packagedElement>
-  <packagedElement xmi:type="uml:Class" xmi:id="_wlnx8DgmEeyUvtpf9CNk4Q" name="Sub System: Vaccinator" useCase="_AJvnIDgnEeyUvtpf9CNk4Q _Cbx7MDgnEeyUvtpf9CNk4Q _Fe4f0DgnEeyUvtpf9CNk4Q _Gzlo8DgnEeyUvtpf9CNk4Q _J14VQDgnEeyUvtpf9CNk4Q _MCNp8DgnEeyUvtpf9CNk4Q _AJvnIDgnEeyUvtpf9CNk4Q _Cbx7MDgnEeyUvtpf9CNk4Q _Fe4f0DgnEeyUvtpf9CNk4Q _Gzlo8DgnEeyUvtpf9CNk4Q _J14VQDgnEeyUvtpf9CNk4Q _MCNp8DgnEeyUvtpf9CNk4Q">
+  <packagedElement xmi:type="uml:Class" xmi:id="_wlnx8DgmEeyUvtpf9CNk4Q" name="Sub System: Vaccinator" useCase="_AJvnIDgnEeyUvtpf9CNk4Q _AJvnIDgnEeyUvtpf9CNk4Q _Cbx7MDgnEeyUvtpf9CNk4Q _Cbx7MDgnEeyUvtpf9CNk4Q _Fe4f0DgnEeyUvtpf9CNk4Q _Fe4f0DgnEeyUvtpf9CNk4Q _Gzlo8DgnEeyUvtpf9CNk4Q _Gzlo8DgnEeyUvtpf9CNk4Q _J14VQDgnEeyUvtpf9CNk4Q _J14VQDgnEeyUvtpf9CNk4Q _MCNp8DgnEeyUvtpf9CNk4Q _MCNp8DgnEeyUvtpf9CNk4Q">
     <ownedUseCase xmi:type="uml:UseCase" xmi:id="_AJvnIDgnEeyUvtpf9CNk4Q" name="Record Vaccinations" subject="_wlnx8DgmEeyUvtpf9CNk4Q _wlnx8DgmEeyUvtpf9CNk4Q"/>
     <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Cbx7MDgnEeyUvtpf9CNk4Q" name="Management of Accounts" subject="_wlnx8DgmEeyUvtpf9CNk4Q _wlnx8DgmEeyUvtpf9CNk4Q">
       <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ZV9X8TgnEeyUvtpf9CNk4Q" name="ExtensionPoint1"/>
@@ -143,4 +148,9 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_pN940DgvEeyx5OGe8GVJCA" name="registration" type="_Ghhu8DgvEeyx5OGe8GVJCA" association="_pN8DoDgvEeyx5OGe8GVJCA"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_pN940TgvEeyx5OGe8GVJCA" name="owner of controlled area" type="_WbuGUDglEeyAvIV-yKPboA" association="_pN8DoDgvEeyx5OGe8GVJCA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_yr3PQDgyEeyYdeTmp7jhIg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_1hupIDgyEeyYdeTmp7jhIg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_6Bxs4DgyEeyYdeTmp7jhIg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EvWC0DgzEeyYdeTmp7jhIg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_LtxNgDgzEeyYdeTmp7jhIg"/>
 </uml:Model>
