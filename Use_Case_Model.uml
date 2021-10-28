@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_TCdrgDglEeyAvIV-yKPboA" name="COMP6030_Use_Case_Model">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_TKUnADglEeyAvIV-yKPboA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_WbuGUDglEeyAvIV-yKPboA" name="Owner of Controlled Area"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ZTNQ0DglEeyAvIV-yKPboA" name="Staff of Controlled Area"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_dy3TADglEeyAvIV-yKPboA" name="Test Centre Staff"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_e97X8DglEeyAvIV-yKPboA" name="Holder"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ga6TUDglEeyAvIV-yKPboA" name="Staff in Disease Control Centre"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_rltX0DglEeyAvIV-yKPboA" name="System Operators"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_wmWnMDglEeyAvIV-yKPboA" name="Crownpass">
+    <packagedElement xmi:type="uml:Class" xmi:id="_7t1R8DglEeyAvIV-yKPboA" name="Sub System: Tester" useCase="_EDNogDgmEeyAvIV-yKPboA _E7jlwDgmEeyAvIV-yKPboA _GbjY4DgmEeyAvIV-yKPboA _Ngh3gDgmEeyAvIV-yKPboA _OxoTADgmEeyAvIV-yKPboA _P3hkEDgmEeyAvIV-yKPboA _Rd4d4DgmEeyAvIV-yKPboA">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_EDNogDgmEeyAvIV-yKPboA" name="Enter Test Result" subject="_7t1R8DglEeyAvIV-yKPboA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_E7jlwDgmEeyAvIV-yKPboA" name="Create New Crownpass" subject="_7t1R8DglEeyAvIV-yKPboA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_GbjY4DgmEeyAvIV-yKPboA" name="Monitor Covid-19 Situation" subject="_7t1R8DglEeyAvIV-yKPboA">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_gNdQsDgmEeyAvIV-yKPboA" name="ExtensionPoint3"/>
+        <include xmi:type="uml:Include" xmi:id="_Z-8gADgmEeyAvIV-yKPboA" addition="_Ngh3gDgmEeyAvIV-yKPboA"/>
+        <include xmi:type="uml:Include" xmi:id="_bTt6kDgmEeyAvIV-yKPboA" addition="_EDNogDgmEeyAvIV-yKPboA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Ngh3gDgmEeyAvIV-yKPboA" name="Setup Monitoring Staff Account" subject="_7t1R8DglEeyAvIV-yKPboA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_OxoTADgmEeyAvIV-yKPboA" name="View Statistical Data" subject="_7t1R8DglEeyAvIV-yKPboA">
+        <extend xmi:type="uml:Extend" xmi:id="_gNcpoDgmEeyAvIV-yKPboA" extendedCase="_GbjY4DgmEeyAvIV-yKPboA" extensionLocation="_gNdQsDgmEeyAvIV-yKPboA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_P3hkEDgmEeyAvIV-yKPboA" name="Setup Monitoring Region" subject="_7t1R8DglEeyAvIV-yKPboA">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_XzYAUDgmEeyAvIV-yKPboA" name="ExtensionPoint1"/>
+        <include xmi:type="uml:Include" xmi:id="_ZDXokDgmEeyAvIV-yKPboA" addition="_Ngh3gDgmEeyAvIV-yKPboA"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Rd4d4DgmEeyAvIV-yKPboA" name="Setup Sub Region" subject="_7t1R8DglEeyAvIV-yKPboA">
+        <extend xmi:type="uml:Extend" xmi:id="_XzWyMDgmEeyAvIV-yKPboA" extendedCase="_P3hkEDgmEeyAvIV-yKPboA" extensionLocation="_XzYAUDgmEeyAvIV-yKPboA"/>
+      </ownedUseCase>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_wlnx8DgmEeyUvtpf9CNk4Q" name="Sub System: Vaccinator" useCase="_AJvnIDgnEeyUvtpf9CNk4Q _Cbx7MDgnEeyUvtpf9CNk4Q _Fe4f0DgnEeyUvtpf9CNk4Q _Gzlo8DgnEeyUvtpf9CNk4Q _J14VQDgnEeyUvtpf9CNk4Q _MCNp8DgnEeyUvtpf9CNk4Q">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_AJvnIDgnEeyUvtpf9CNk4Q" name="Record Vaccinations" subject="_wlnx8DgmEeyUvtpf9CNk4Q"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Cbx7MDgnEeyUvtpf9CNk4Q" name="Management of Accounts" subject="_wlnx8DgmEeyUvtpf9CNk4Q">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ZV9X8TgnEeyUvtpf9CNk4Q" name="ExtensionPoint1"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Fe4f0DgnEeyUvtpf9CNk4Q" name="View Bookings" subject="_wlnx8DgmEeyUvtpf9CNk4Q"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Gzlo8DgnEeyUvtpf9CNk4Q" name="Assign Staff" subject="_wlnx8DgmEeyUvtpf9CNk4Q"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_J14VQDgnEeyUvtpf9CNk4Q" name="Assign Time Table" subject="_wlnx8DgmEeyUvtpf9CNk4Q">
+        <include xmi:type="uml:Include" xmi:id="_aWx7wDgnEeyUvtpf9CNk4Q" addition="_Gzlo8DgnEeyUvtpf9CNk4Q"/>
+        <include xmi:type="uml:Include" xmi:id="_bInoYDgnEeyUvtpf9CNk4Q" addition="_Fe4f0DgnEeyUvtpf9CNk4Q"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_MCNp8DgnEeyUvtpf9CNk4Q" name="Create Staff User Accounts" subject="_wlnx8DgmEeyUvtpf9CNk4Q">
+        <extend xmi:type="uml:Extend" xmi:id="_ZV9X8DgnEeyUvtpf9CNk4Q" extendedCase="_Cbx7MDgnEeyUvtpf9CNk4Q" extensionLocation="_ZV9X8TgnEeyUvtpf9CNk4Q"/>
+      </ownedUseCase>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_CZv-EDgrEeyAvIV-yKPboA" name="Sub System: Holder">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_pR4zsDgoEeynRpmlDRr_Sw" name="Web access">
+        <include xmi:type="uml:Include" xmi:id="_70TwkDgpEeynRpmlDRr_Sw" addition="_fI9mcDgpEeynRpmlDRr_Sw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_fKa0cDgoEeynRpmlDRr_Sw" name="Display Pass">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_C90J4DgqEeynRpmlDRr_Sw" name="ExtensionPoint2"/>
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_FCjBwTgqEeynRpmlDRr_Sw" name="ExtensionPoint3"/>
+        <include xmi:type="uml:Include" xmi:id="_83ivMDgpEeynRpmlDRr_Sw" addition="_fI9mcDgpEeynRpmlDRr_Sw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_iv5Q4DgpEeynRpmlDRr_Sw" name="Notification">
+        <extend xmi:type="uml:Extend" xmi:id="_C9y7wDgqEeynRpmlDRr_Sw" extendedCase="_fKa0cDgoEeynRpmlDRr_Sw" extensionLocation="_C90J4DgqEeynRpmlDRr_Sw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_THyJADgoEeynRpmlDRr_Sw" name="Check Trace">
+        <extend xmi:type="uml:Extend" xmi:id="_JhocMDgqEeynRpmlDRr_Sw" extendedCase="_Uj0CIDgoEeynRpmlDRr_Sw" extensionLocation="_JhocMTgqEeynRpmlDRr_Sw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_ldh70DgpEeynRpmlDRr_Sw" name="Print Pass">
+        <extend xmi:type="uml:Extend" xmi:id="_FCjBwDgqEeynRpmlDRr_Sw" extendedCase="_fKa0cDgoEeynRpmlDRr_Sw" extensionLocation="_FCjBwTgqEeynRpmlDRr_Sw"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_bfT0oDgoEeynRpmlDRr_Sw" name="Register"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Uj0CIDgoEeynRpmlDRr_Sw" name="Check-in and Check-out">
+        <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_JhocMTgqEeynRpmlDRr_Sw" name="ExtensionPoint1"/>
+      </ownedUseCase>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_cjsCwDgoEeynRpmlDRr_Sw" name="Book Vaccination"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_fI9mcDgpEeynRpmlDRr_Sw" name="Check State"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="__mvHEDguEeyx5OGe8GVJCA" name="Sub System: Owner" useCase="_Ghhu8DgvEeyx5OGe8GVJCA _IUtj0DgvEeyx5OGe8GVJCA _KnnakDgvEeyx5OGe8GVJCA _Lk0psDgvEeyx5OGe8GVJCA _MNw5ADgvEeyx5OGe8GVJCA _NHpHUDgvEeyx5OGe8GVJCA _N7PugDgvEeyx5OGe8GVJCA _RjHNEDgvEeyx5OGe8GVJCA _SxCYwDgvEeyx5OGe8GVJCA _USwDIDgvEeyx5OGe8GVJCA _VaVWQDgvEeyx5OGe8GVJCA _WOvOsDgvEeyx5OGe8GVJCA">
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Ghhu8DgvEeyx5OGe8GVJCA" name="Registration" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_IUtj0DgvEeyx5OGe8GVJCA" name="Setup Staff Account" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_KnnakDgvEeyx5OGe8GVJCA" name="Delete Staff Account" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Lk0psDgvEeyx5OGe8GVJCA" name="Update" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_MNw5ADgvEeyx5OGe8GVJCA" name="View Registration Data" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_NHpHUDgvEeyx5OGe8GVJCA" name="View Operation State" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_N7PugDgvEeyx5OGe8GVJCA" name="Set Entry Condition" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_RjHNEDgvEeyx5OGe8GVJCA" name="Check-in Customer" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_SxCYwDgvEeyx5OGe8GVJCA" name="Check-out Customer" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_USwDIDgvEeyx5OGe8GVJCA" name="Evacuation of Area" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_VaVWQDgvEeyx5OGe8GVJCA" name="Notify and Close" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+      <ownedUseCase xmi:type="uml:UseCase" xmi:id="_WOvOsDgvEeyx5OGe8GVJCA" name="Reset Area State" subject="__mvHEDguEeyx5OGe8GVJCA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JWviMDgnEeyAvIV-yKPboA" memberEnd="_JWwwUDgnEeyAvIV-yKPboA _JWxXYDgnEeyAvIV-yKPboA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JWwJQDgnEeyAvIV-yKPboA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JWwJQTgnEeyAvIV-yKPboA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JWwwUDgnEeyAvIV-yKPboA" name="create new crownpass" type="_E7jlwDgmEeyAvIV-yKPboA" association="_JWviMDgnEeyAvIV-yKPboA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JWxXYDgnEeyAvIV-yKPboA" name="test centre staff" type="_dy3TADglEeyAvIV-yKPboA" association="_JWviMDgnEeyAvIV-yKPboA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Kov8oDgnEeyAvIV-yKPboA" memberEnd="_KowjsTgnEeyAvIV-yKPboA _KowjsjgnEeyAvIV-yKPboA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Kov8oTgnEeyAvIV-yKPboA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_KowjsDgnEeyAvIV-yKPboA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KowjsTgnEeyAvIV-yKPboA" name="enter test result" type="_EDNogDgmEeyAvIV-yKPboA" association="_Kov8oDgnEeyAvIV-yKPboA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_KowjsjgnEeyAvIV-yKPboA" type="_dy3TADglEeyAvIV-yKPboA" association="_Kov8oDgnEeyAvIV-yKPboA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MKpNMDgnEeyAvIV-yKPboA" memberEnd="_MKp0QTgnEeyAvIV-yKPboA _MKp0QjgnEeyAvIV-yKPboA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MKpNMTgnEeyAvIV-yKPboA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MKp0QDgnEeyAvIV-yKPboA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MKp0QTgnEeyAvIV-yKPboA" name="monitor covid-19 situation" type="_GbjY4DgmEeyAvIV-yKPboA" association="_MKpNMDgnEeyAvIV-yKPboA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MKp0QjgnEeyAvIV-yKPboA" name="staff in disease control centre" type="_ga6TUDglEeyAvIV-yKPboA" association="_MKpNMDgnEeyAvIV-yKPboA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MtT1YDgnEeyAvIV-yKPboA" memberEnd="_MtUccjgnEeyAvIV-yKPboA _MtUcczgnEeyAvIV-yKPboA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MtUccDgnEeyAvIV-yKPboA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MtUccTgnEeyAvIV-yKPboA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MtUccjgnEeyAvIV-yKPboA" name="setup monitoring staff account" type="_Ngh3gDgmEeyAvIV-yKPboA" association="_MtT1YDgnEeyAvIV-yKPboA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MtUcczgnEeyAvIV-yKPboA" type="_ga6TUDglEeyAvIV-yKPboA" association="_MtT1YDgnEeyAvIV-yKPboA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_NkacgDgnEeyAvIV-yKPboA" memberEnd="_NkbDkjgnEeyAvIV-yKPboA _NkbDkzgnEeyAvIV-yKPboA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NkbDkDgnEeyAvIV-yKPboA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_NkbDkTgnEeyAvIV-yKPboA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NkbDkjgnEeyAvIV-yKPboA" name="setup monitoring region" type="_P3hkEDgmEeyAvIV-yKPboA" association="_NkacgDgnEeyAvIV-yKPboA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_NkbDkzgnEeyAvIV-yKPboA" type="_ga6TUDglEeyAvIV-yKPboA" association="_NkacgDgnEeyAvIV-yKPboA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_wlnx8DgmEeyUvtpf9CNk4Q" name="Sub System: Vaccinator" useCase="_AJvnIDgnEeyUvtpf9CNk4Q _Cbx7MDgnEeyUvtpf9CNk4Q _Fe4f0DgnEeyUvtpf9CNk4Q _Gzlo8DgnEeyUvtpf9CNk4Q _J14VQDgnEeyUvtpf9CNk4Q _MCNp8DgnEeyUvtpf9CNk4Q _AJvnIDgnEeyUvtpf9CNk4Q _Cbx7MDgnEeyUvtpf9CNk4Q _Fe4f0DgnEeyUvtpf9CNk4Q _Gzlo8DgnEeyUvtpf9CNk4Q _J14VQDgnEeyUvtpf9CNk4Q _MCNp8DgnEeyUvtpf9CNk4Q">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_AJvnIDgnEeyUvtpf9CNk4Q" name="Record Vaccinations" subject="_wlnx8DgmEeyUvtpf9CNk4Q _wlnx8DgmEeyUvtpf9CNk4Q"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Cbx7MDgnEeyUvtpf9CNk4Q" name="Management of Accounts" subject="_wlnx8DgmEeyUvtpf9CNk4Q _wlnx8DgmEeyUvtpf9CNk4Q">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_ZV9X8TgnEeyUvtpf9CNk4Q" name="ExtensionPoint1"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Fe4f0DgnEeyUvtpf9CNk4Q" name="View Bookings" subject="_wlnx8DgmEeyUvtpf9CNk4Q _wlnx8DgmEeyUvtpf9CNk4Q"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_Gzlo8DgnEeyUvtpf9CNk4Q" name="Assign Staff" subject="_wlnx8DgmEeyUvtpf9CNk4Q _wlnx8DgmEeyUvtpf9CNk4Q"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_J14VQDgnEeyUvtpf9CNk4Q" name="Assign Time Table" subject="_wlnx8DgmEeyUvtpf9CNk4Q _wlnx8DgmEeyUvtpf9CNk4Q">
+      <include xmi:type="uml:Include" xmi:id="_aWx7wDgnEeyUvtpf9CNk4Q" addition="_Gzlo8DgnEeyUvtpf9CNk4Q"/>
+      <include xmi:type="uml:Include" xmi:id="_bInoYDgnEeyUvtpf9CNk4Q" addition="_Fe4f0DgnEeyUvtpf9CNk4Q"/>
+    </ownedUseCase>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_MCNp8DgnEeyUvtpf9CNk4Q" name="Create Staff User Accounts" subject="_wlnx8DgmEeyUvtpf9CNk4Q _wlnx8DgmEeyUvtpf9CNk4Q">
+      <extend xmi:type="uml:Extend" xmi:id="_ZV9X8DgnEeyUvtpf9CNk4Q" extendedCase="_Cbx7MDgnEeyUvtpf9CNk4Q" extensionLocation="_ZV9X8TgnEeyUvtpf9CNk4Q"/>
+    </ownedUseCase>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_YzHUIDgoEeynRpmlDRr_Sw" name="Holder"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_pN8DoDgvEeyx5OGe8GVJCA" memberEnd="_pN940DgvEeyx5OGe8GVJCA _pN940TgvEeyx5OGe8GVJCA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_pN9RwDgvEeyx5OGe8GVJCA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_pN9RwTgvEeyx5OGe8GVJCA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pN940DgvEeyx5OGe8GVJCA" name="registration" type="_Ghhu8DgvEeyx5OGe8GVJCA" association="_pN8DoDgvEeyx5OGe8GVJCA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_pN940TgvEeyx5OGe8GVJCA" name="owner of controlled area" type="_WbuGUDglEeyAvIV-yKPboA" association="_pN8DoDgvEeyx5OGe8GVJCA"/>
+  </packagedElement>
+</uml:Model>
